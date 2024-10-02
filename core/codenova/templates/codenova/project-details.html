@@ -1,0 +1,187 @@
+{% extends 'codenova/base.html' %}
+{% load static %}
+
+{% block title %}project-details{% endblock %}
+
+{% block content %}
+<main>
+
+
+    <!-- ==================== Start project ==================== -->
+
+    <section class="project section-padding radius-15" dir="rtl">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="img mb-80">
+                        <img src="{% static 'imgs/vpn2.png'%}" alt="" class="radius-5">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="cont md-mb50">
+                            <div class="stauts mt-50 pt-50 bord-thin-top" dir="rtl">
+                                <div class="d-flex align-items-center">
+                                    <div class="ml-40">
+                                        <div class="d-flex align-items-center">
+                                            <h2>6k</h2>
+                                            <p"> Downloads <br> </p>
+                                        </div>
+                                    </div>
+                                    <div class="mr-auto">
+                                        <div class="butn-presv">
+                                            <a href="{% url 'download_file' project_id=1 %}" class="butn butn-md butn-bord radius-5 skew">
+                                                <span style="font-size: 20px;">تحميل التطبيق</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                                <br>
+                                <br>
+                                <h3 class="mb-15 fw-500">GhostVPN - الدرع الأمثل لحمايتك الرقمية</h3>
+                                <p class="mt-15" style="font-size: 20px;">اكتشف تجربة رقمية فريدة مع GhostVPN، حيث نمنحك حماية شاملة لخصوصيتك عبر الإنترنت. سواء كنت تستعرض المواقع، تستمتع
+                                    بمشاهدة المحتوى، أو تتعامل مع بيانات حساسة، فإن GhostVPN يوفر لك الحماية المثلى باستخدام أحدث تقنيات التشفير. نحن
+                                    هنا لنمنحك الأمان الذي تحتاجه، حتى تشعر بالراحة والثقة في كل خطوة تخطوها.</p>
+                                
+                                <p class="mt-15" style="font-size: 20px;">مع GhostVPN، يمكنك أن تنسى القلق بشأن خصوصيتك وتركز على ما يهمك حقًا—أمانك. نحن لا نقدم لك مجرد تطبيق
+                                    VPN، بل نسعى جاهدين لنقدم لك حماية موثوقة ومتسقة تعمل بكفاءة في كل مكان تتواجد فيه. تذكر، خصوصيتك هي من أولوياتنا.
+                                </p>
+                               
+                                
+                                <div class="mt-30">
+                                    <h6 class="mb-15 line-height-28" style="font-size: 20px;">GhostVPN يمنحك القوة لتكون المسيطر على وجودك الرقمي، دون التضحية بالسرعة أو سهولة
+                                        الاستخدام. انطلق الآن وقم بتنزيل GhostVPN لتجربة راقية ومطمئنة.</h6>
+                                    <ul class="rest list-arrow mt-50">
+                                        <li>
+                                            <span class="icon">
+                                                <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
+                                                        fill="#fff"></path>
+                                                </svg>
+                                            </span>
+                                            <h6 class="inline fz-30" >الأمان أولاً</h6>
+                                            <p style="font-size: 20px;">نحن في GhostVPN نضع خصوصيتك في صميم كل ما نقوم به. مع تشفير رائد في الصناعة، نحرص على حماية بياناتك من كل
+                                                ما هو خارجي.</p>
+                                        </li>
+                                        <li class="mt-20">
+                                            <span class="icon">
+                                                <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
+                                                        fill="#fff"></path>
+                                                </svg>
+                                            </span>
+                                            <h6 class="inline fz-30">سرعة البرق</h6>
+                                            <p style="font-size: 20px;">استمتع بتصفح سلس وبث مستمر بلا انقطاع، حتى مع الخوادم البعيدة. نحن نعدك بتجربة سريعة ومريحة.</p>
+                                        </li>
+                                        <li class="mt-20">
+                                            <span class="icon">
+                                                <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
+                                                        fill="#fff"></path>
+                                                </svg>
+                                            </span>
+                                            <h6 class="inline fz-30">تصميم عصري</h6>
+                                            <p style="font-size: 20px;">واجهة نظيفة وبسيطة مصممة لتسهيل استخدامك، تضمن لك تجربة مريحة وسلسة.</p>
+                                        </li>
+                                        <li class="mt-20">
+                                            <span class="icon">
+                                                <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
+                                                        fill="#fff"></path>
+                                                </svg>
+                                            </span>
+                                            <h6 class="inline fz-30">اتصال موثوق</h6>
+                                            <p style="font-size: 20px;">ابق على اتصال مع خوادم VPN مستقرة وآمنة، لتضمن لك تجربة تصفح بدون انقطاع.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div id="sticky_item">
+                                <div class="info">
+                                    <ul>
+                                        <li class="mb-30">
+                                            <span class="sub-title"><i class="far fa-calendar-alt mr-10"></i> التاريخ
+                                                :</span>
+                                            <p>6, August 2022</p>
+                                        </li>
+                                        <li class="mb-30">
+                                            <span class="sub-title"><i class="fas fa-list-ul mr-10"></i> القسم
+                                                :</span>
+                                            <p>Mobile App</p>
+                                        </li>
+                                        <li class="mb-30">
+                                            <span class="sub-title"><i class="far fa-user mr-10"></i> العميل
+                                                :</span>
+                                            <p>Mohammed Saluh Alhammadi</p>
+                                        </li>
+                                        <li>
+                                            <span class="sub-title"><i class="fas fa-globe mr-10"></i> الموقع
+                                                :</span>
+                                            <p>hgool.net</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs mt-80">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row md-marg">
+                            <div class="col-md-6">
+                                <div class="img sm-mb30">
+                                    <img src="assets/imgs/works/project/2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img">
+                                    <img src="assets/imgs/works/project/3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-prev" dir="rtl">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex align-items-center mt-80 pt-80 bord-thin-top">
+                            <div class="prev">
+                                <h6 class="sub-title">
+                                    <a href=""><i class="fas fa-long-arrow-alt-left"></i> المشروع السابق</a>
+                                </h6>
+                            </div>
+                            <div class="next ml-auto">
+                                <h6 class="sub-title">
+                                    <a href="">المشروع التالي<i
+                                            class="fas fa-long-arrow-alt-right"></i></a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ==================== End project ==================== -->
+
+
+
+</main>
+
+{%endblock%}

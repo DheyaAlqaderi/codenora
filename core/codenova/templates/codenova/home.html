@@ -1,0 +1,188 @@
+{% extends 'codenova/base.html' %}
+{% load static %}
+{% block title %}Home - DheyaAlqaderi{% endblock %}
+{% block content %}
+<main class="pt-80">
+
+
+    <!-- ==================== Start Hero ==================== -->
+
+    <section class="hero section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="intro">
+                        <div class="lg-box">
+                            <div class="box1">
+                                <div class="tow-items">
+                                    <div class="item1 box-shadwo">
+                                        <div class="circle-item d-flex align-items-center justify-content-center">
+                                            <h6><a href="about.html">About Us</a></h6>
+                                        </div>
+                                        <div class="text-center mt-30">
+                                            <a href="home.html#0">
+                                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 34.2 32.3" xml:space="preserve"
+                                                    style="stroke-width: 2;">
+                                                    <line x1="0" y1="16" x2="33" y2="16"></line>
+                                                    <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
+                                                    <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
+                                                </svg>
+                                                <p class="fz-13 mt-15">Dwonload CV</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item2">
+                                        <div
+                                            class="sub-item1 box-shadwo d-flex align-items-center justify-content-center">
+                                            <div class="text-center">
+                                                <h2 class="fw-700">8</h2>
+                                                <p class="fz-13">Years <br> of Experaince</p>
+                                            </div>
+                                        </div>
+                                        <div class="sub-item2 box-shadwo"></div>
+                                    </div>
+                                </div>
+                                <div class="item-down box-shadwo d-flex align-items-center">
+                                    <div>
+                                        <div class="circle-item d-flex align-items-center justify-content-center">
+                                            <a href="{% url 'services' %}">
+                                                <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 34.2 32.3" xml:space="preserve"
+                                                    style="stroke-width: 2;">
+                                                    <line x1="0" y1="16" x2="33" y2="16"></line>
+                                                    <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
+                                                    <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h6 class="ml-15"><a href="{% url 'services' %}">Our Services</a></h6>
+                                </div>
+                            </div>
+
+                            <div class="box2">
+                                <div class="item3 box-shadwo"></div>
+                                <div class="item4 box-shadwo d-flex align-items-center">
+                                    <h6><a href="{% url 'portfolio' %}">Our Portfolio</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-boxs">
+                            <div class="item5 box-shadwo d-flex align-items-center justify-content-center">
+                                <a href="home.html#0" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="item6 box-shadwo d-flex align-items-center justify-content-center">
+                                <a href="home.html#0" class="icon">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </div>
+                            <div class="item7 box-shadwo d-flex align-items-center justify-content-center">
+                                <a href="home.html#0" class="icon">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="author-profile">
+                        <div class="author-img">
+                            <div class="img">
+                                <img src="{% static  'imgs/logo2.png'%}" alt="">
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <div class="text-center">
+                                <span class="main-color sub-title mb-10">Mobile App Developer / Backend Developer</span>
+                                <h4 class="fw-500">Hi, I'm Dheya Alqaderi</h4>
+                            </div>
+                            <div class="social mt-20">
+                                <a href="https://www.linkedin.com/in/dheya-yahya-al-qaderi-ba5a3b260/" class="icon" target="_blank" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/DheyaAlqaderi/" class="icon" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://t.me/dheya_alqaderi" class="icon" target="_blank" title="Telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                                <a href="https://wa.me/+967771158212" class="icon" target="_blank" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://x.com/DheyaAlqadrei" class="icon" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="butns mt-30">
+                            <a href="home.html#0" class="inf-butn" data-scroll-nav="4">
+                                <span>Contact Us</span>
+                            </a>
+                            <a href="home.html#0" class="inf-butn">
+                                <span>Dwonload CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 valign">
+                    <div class="content">
+                        <h5 class="cd-headline slide">
+                            <span>Hello, I’m</span>
+                            <span class="cd-words-wrapper main-color">
+                                <b class="is-visible">Dheya Yahya Alqaderi</b>
+                                <b>Flutter Developer</b>
+                                <b>System Analyst</b>
+                                <b>Django Developer</b>
+                                <b>cloud Engineer AWS - GCP</b>
+                            </span>
+                        </h5>
+                        <h1>I’m a Back-end Developer and <span class="bord">Flutter Developer</span> Based in
+                            Yemen.</h1>
+                        <p class="text">I’m passionate about technology because it’s where creativity and
+                            problem-solving come together to make a real impact. I
+                            love the feeling of turning an idea into something functional, something that can make
+                            someone’s day easier or solve a
+                            problem they didn’t know could be fixed. There’s a sense of excitement in watching complex
+                            systems come together,
+                            knowing that behind every line of code is the potential to shape the future. For me, it’s
+                            not just about building
+                            tech—it’s about the joy of creating something meaningful, something that can truly make a
+                            difference in the world.</p>
+                        <div class="stauts mt-50 pt-50 bord-thin-top">
+                            <div class="d-flex align-items-center">
+                                <div class="mr-40">
+                                    <div class="d-flex align-items-center">
+                                        <h2>50</h2>
+                                        <p>Completed <br> Projects</p>
+                                    </div>
+                                </div>
+                                <div class="mr-40">
+                                    <div class="d-flex align-items-center">
+                                        <h2>6k</h2>
+                                        <p>Clients <br> Worldwide</p>
+                                    </div>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="butn-presv">
+                                        <a href="contact.html" class="butn butn-md butn-bord radius-5 skew">
+                                            <span>Hire Me!</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== End Hero ==================== -->
+
+
+</main>
+{% endblock %}
+    
