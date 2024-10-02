@@ -23,6 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-f7-p((2ml#fdtitc8h0da5av__0p1-xs%haqoq21&&_*4(7j_w"
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
@@ -57,7 +58,7 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / 'templates'],  # You can add directories here if you have templates outside of apps
+        "DIRS": [BASE_DIR / 'templates/'],  # You can add directories here if you have templates outside of apps
         "APP_DIRS": True,  # This should be True to find templates in app directories
         "OPTIONS": {
             "context_processors": [
@@ -118,17 +119,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+# STATIC_URL = "/static/"
 
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
+# STATIC_URL = '/static/'
+# # STATICFILES_DIRS = [
+# #     BASE_DIR / "static/",
 
-]
-# STATIC_ROOT = BASE_DIR / 'static'
-STATIC_ROOT = BASE_DIR / 'assets'
+# # ]
+# # STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = BASE_DIR / 'assets/'
 
+
+STATIC_URL = '/assets/'
+MEDIA_URL = '/media/'
+
+STATIC_ROOT = BASE_DIR / 'static/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 APPEND_SLASH = True
 
@@ -136,11 +143,14 @@ APPEND_SLASH = True
 
 # media
 
-MEDIA_URL = 'media/'
-MEDIAFILES_DIRS = [
-    BASE_DIR / "media/",
-]
-MEDIA_ROOT = BASE_DIR / 'media/'
+# MEDIA_URL = 'media/'
+# MEDIAFILES_DIRS = [
+#     BASE_DIR / "media/",
+# ]
+# MEDIA_ROOT = BASE_DIR / 'media/'
+
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
